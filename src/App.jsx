@@ -26,16 +26,16 @@ export default function App() {
         }
       >
         <Route index element={<Account />} />
-        <Route path="pages" element={<PagesList />} />
-        <Route path="hero" element={<CarouselCMS />} />
-        <Route path="pages/new" element={<PageForm />} />
-        <Route path="pages/:id" element={<PageForm />} />
-        <Route path="menus" element={<Menus />} />
-        <Route path="account" element={<Account />} />
-        <Route path="review" element={<ReviewsAdmin />} />
-        <Route path="faq" element={<FAQ />} />
-        <Route path="projects" element={<ProjectsAdmin />} />
-        <Route path="design" element={<DesignGalleryAdmin />} />
+        <Route path="/pages" element={<PagesList />} />
+        <Route path="/hero" element={<CarouselCMS />} />
+        <Route path="/pages/new" element={<PageForm />} />
+        <Route path="/pages/:id" element={<PageForm />} />
+        <Route path="/menus" element={<Menus />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/review" element={<ReviewsAdmin />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/projects" element={<ProjectsAdmin />} />
+        <Route path="/design" element={<DesignGalleryAdmin />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
