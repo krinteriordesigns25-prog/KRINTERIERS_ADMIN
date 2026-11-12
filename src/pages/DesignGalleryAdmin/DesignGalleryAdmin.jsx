@@ -650,7 +650,7 @@ export default function DesignGalleryAdmin() {
                       )}
                     </Field>
 
-                    <Field label="Sort Order">
+                    <Field label="Sort Order" style={{ display: "none" }}>
                       <input
                         type="number"
                         value={form.sortOrder ?? 0}
@@ -822,7 +822,7 @@ export default function DesignGalleryAdmin() {
                     </Field>
 
                     <div className="dga-form-grid">
-                      <Field label="Sort Order">
+                      <Field label="Sort Order" style={{ display: "none" }}>
                         <input
                           type="number"
                           value={form.sortOrder ?? 0}
@@ -887,7 +887,7 @@ export default function DesignGalleryAdmin() {
                       />
                     </Field>
 
-                    <Field label="Sort Order">
+                    <Field label="Sort Order" style={{ display: "none" }}>
                       <input
                         type="number"
                         value={form.sortOrder ?? 0}
@@ -942,9 +942,9 @@ export default function DesignGalleryAdmin() {
   );
 }
 
-function Field({ label, required, children }) {
+function Field({ label, required, children, style }) {
   return (
-    <label className="dga-field">
+    <label className="dga-field" style={style}>
       <span>
         {label} {required && <i>*</i>}
       </span>

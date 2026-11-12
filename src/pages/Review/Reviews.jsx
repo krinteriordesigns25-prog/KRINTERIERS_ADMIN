@@ -207,7 +207,7 @@ export default function ReviewsAdmin() {
                 ))}
               </select>
             </label>
-            <label>
+            <label style={{ display: "none" }}>
               Display order
               <input
                 name="sortOrder"

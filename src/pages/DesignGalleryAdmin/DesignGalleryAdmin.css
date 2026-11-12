@@ -604,6 +604,7 @@
 .dga-toggle {
     display: flex;
     align-items: center;
+    justify-content: end;
     gap: 9px;
     color: var(--dga-muted);
     font-size: 12px;
@@ -612,6 +613,7 @@
 
 .dga-toggle input {
     accent-color: var(--dga-gold);
+    width: auto;
 }
 
 /* IMAGE UPLOAD */

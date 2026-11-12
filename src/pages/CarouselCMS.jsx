@@ -285,12 +285,12 @@ export default function CarouselCMS() {
                 onChange={handleChange}
                 placeholder="Enter the supporting text"
                 rows={3}
-                maxLength={500}
+                maxLength={200}
                 required
               />
             </label>
 
-            <label className="carousel-cms__field">
+            <label className="carousel-cms__field " style={{ display: "none" }}>
               <span>Display order</span>
               <input
                 name="sortOrder"
